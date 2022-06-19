@@ -575,6 +575,63 @@ h3.my-profession
     text-align: justify;
     color: var(--text-black-700)  ;
 }
+
+
+
+
+
+
+
+/* Publication */
+.publication .card
+{
+    background-color: var(--bg-black-100);
+    padding: 10px 10px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px grey;
+    display: flex;
+    margin-bottom: 20px;
+}
+.publication .card:hover
+{
+    box-shadow: 0 0 10px var(--skin-color);
+}
+.publication .serial-no
+{
+    flex: 5%;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+.publication .card-item
+{
+    flex: 95%;
+    padding-left: 10px;
+    color: var(--text-black-900);
+}
+.publication .card a
+{
+    color: var(--text-black-900);
+}
+.publication .card a:hover
+{
+    color: var(--skin-color);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Journals */
 .journal .container
 {
@@ -853,5 +910,14 @@ h3.my-profession
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .publication .card
+    {
+        flex-wrap: wrap;
+    }
+    .publication .serial-no
+    {
+        padding: 0px;
+        padding-left: 10px;
     }
 }
