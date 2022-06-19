@@ -1,6 +1,6 @@
 /* ========================= typing animation ==================== */
 var typed = new Typed(".typing",{
-    strings:["","Asistent Professor","Web Designer","Web Developer","Graphic Designer","YouTuber"],
+    strings:["","Associate Professor","Academician","Researcher","Public Speaker"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
@@ -69,7 +69,14 @@ const nav = document.querySelector(".nav"),
     document.querySelector(".hire-me").addEventListener("click", function()
     {
         const sectionIndex = this.getAttribute("data-section-index");
-        // console.log(sectionIndex)
+        showSection(this);
+        updateNav(this);
+        removeBackSection();
+        addBackSection(sectionIndex);
+    })
+    document.querySelector(".download-cv").addEventListener("click", function()
+    {
+        const sectionIndex = this.getAttribute("data-section-index");
         showSection(this);
         updateNav(this);
         removeBackSection();

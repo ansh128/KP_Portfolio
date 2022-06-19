@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&display=swap');
 :root
 {
     --bg-black-900: #f2f2fc;
@@ -149,6 +150,7 @@ ul{
     border: none;
     white-space: nowrap;
     transition: all 0.3s ease; 
+    margin-right: 30px;
 }
 .btn:hover
 {
@@ -158,6 +160,12 @@ ul{
 {
     box-shadow: 0 0 10px grey;
 }
+
+
+
+
+
+
 /*  Aside  */
 .aside
 {
@@ -304,6 +312,12 @@ ul{
     margin-right: 15px;
 }
 
+
+
+
+
+
+
 /* Home */
 .home{
     min-height: 100vh;
@@ -323,7 +337,7 @@ h3.hello
 }
 h3.hello span
 {
-    font-family: 'Parisienne';
+    font-family: 'Charis SIL';
     font-size: 35px;
     font-weight: 700;
     color: var(--skin-color);
@@ -339,7 +353,7 @@ h3.my-profession
 }
 .home-info p
 {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     font-size: 20px;
     color: var(--text-black-700);
 }
@@ -348,37 +362,29 @@ h3.my-profession
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
-    position: relative; 
+    margin: auto;
+    position: relative;
 }
-.home-img::after
+.home .home-img img
 {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    box-shadow: 5px 5px 10px var(--skin-color);
 }
-.home-img::before
-{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: 20px;
-    top: -40px;
-}
- .home .home-img img
+.home .home-img img
  {
      margin: auto;
      border-radius: 10px;
      height: 400px;
-
  }
+.home .home-info .read-more
+{
+    color: var(--skin-color);
+}
+
+
+
+
+
+
  /* About */
  .about .about-content
  {
@@ -412,6 +418,11 @@ h3.my-profession
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 40px;
+ }
+ .about .about-content .personal-info .designation
+ {
+    font-size: large;
+    color: var(--text-black-900);
  }
  .about .about-content .personal-info .info-item
  {
